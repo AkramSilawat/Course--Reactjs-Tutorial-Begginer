@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hello = () => {
-    // without  useing jsx
+    // without  using jsx
 
     // return (
     //     <div className = 'dummyClass'>
