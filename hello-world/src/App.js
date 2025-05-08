@@ -4,6 +4,7 @@ import Hello from './components/Hello';
 import Greet, { NameExportGreet } from './components/Greet';
 import Welcome from './components/Welcome';
 import Message from './components/Message';
+import Counter from './components/Counter';
 
 class App extends Component {
   render() {
@@ -32,7 +33,10 @@ class App extends Component {
         <Welcome name ="Diana" heroName="Wonder Woman"/>
         */}
 
-        <Message />
+        {/* <Message /> */}
+
+        <Counter />
+
       </div>
     );
   }
