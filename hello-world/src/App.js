@@ -13,21 +13,21 @@ class App extends Component {
 
         {/* <Hello /> */}
 
-        {/*
-        <Greet name="Bruce" heroName="Batman">
+        
+        {/* <Greet name="Bruce" heroName="Batman">
           <p>Paired Tag: This is children props</p>
-        </Greet>
-        <Greet name="Clark" heroName="Superman">
+        </Greet> */}
+        {/* <Greet name="Clark" heroName="Superman">
           <button>Action</button>
-        </Greet>
+        </Greet> */}
 
-        <Greet name="Akku" heroName="spiderman" children={<b>Self-Closing Tag: Children prop</b>} />
+        {/* <Greet name="Akku" heroName="spiderman" children={<b>Self-Closing Tag: Children prop</b>} /> */}
         <Greet name="Diana" heroName="Wonder Woman" />
-        <NameExportGreet />
-        */}
+        {/* <NameExportGreet /> */}
+       
 
         
-        {/* 
+{/*         
         <Welcome name ="Bruce" heroName="Batman"/>
         <Welcome name ="Clark" heroName="Superman"/>
         <Welcome name ="Diana" heroName="Wonder Woman"/>
@@ -35,7 +35,7 @@ class App extends Component {
 
         {/* <Message /> */}
 
-        <Counter />
+        {/* <Counter /> */}
 
       </div>
     );
