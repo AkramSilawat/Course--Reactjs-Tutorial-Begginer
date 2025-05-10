@@ -21,7 +21,23 @@ export const NameExportGreet = () => <h1>Hello Vishwas</h1>
 
 // Video No- 12  Destructuring props and state
 
-const Greet = ({name, heroName}) => {
+// ---> 01
+
+// const Greet = ({name, heroName}) => {
+//     return (
+//         <div>
+//             <h1>
+//                 Hello {name} a.k.s {heroName}
+//             </h1>
+//         </div>
+//     )
+// }
+
+
+// ---> 02
+
+ const Greet = props => {
+    const {name, heroName} = props
     return (
         <div>
             <h1>
