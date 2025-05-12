@@ -5,6 +5,8 @@ import Greet, { NameExportGreet } from './components/Greet';
 import Welcome from './components/Welcome';
 import Message from './components/Message';
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 class App extends Component {
   render() {
@@ -13,7 +15,7 @@ class App extends Component {
 
         {/* <Hello /> */}
 
-        
+
         {/* <Greet name="Bruce" heroName="Batman">
           <p>Paired Tag: This is children props</p>
         </Greet> */}
@@ -22,19 +24,23 @@ class App extends Component {
         </Greet> */}
 
         {/* <Greet name="Akku" heroName="spiderman" children={<b>Self-Closing Tag: Children prop</b>} /> */}
-        <Greet name="Diana" heroName="Wonder Woman" />
+        {/* <Greet name="Diana" heroName="Wonder Woman" /> */}
         {/* <NameExportGreet /> */}
-       
-        
-        <Welcome name ="Bruce" heroName="Batman"/>
+
+
+        {/* <Welcome name ="Bruce" heroName="Batman"/> */}
         {/* <Welcome name ="Clark" heroName="Superman"/> */}
         {/* <Welcome name ="Diana" heroName="Wonder Woman"/> */}
-       
+
 
         {/* <Message /> */}
 
         {/* <Counter /> */}
 
+        <FunctionClick />
+        <ClassClick />
+       
+       
       </div>
     );
   }
