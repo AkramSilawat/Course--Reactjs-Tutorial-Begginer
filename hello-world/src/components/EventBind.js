@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+
+// 14 -> Binding Event Handlers
+
 class EventBind extends Component {
 
     constructor(props) {
@@ -25,18 +28,8 @@ class EventBind extends Component {
         })
     }
 
-    render() {
-        return (
-            <div>
-                <div>{this.state.message}</div>
-                {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
-                {/* <button onClick={() => this.clickHandler()}>Click</button> */}
-                <button onClick={this.clickHandler}>Click</button>
-            </div>
-        )
-    }
 
-      render() {
+    render() {
         return (
             <div>
                 <div>{this.state.message}</div>
