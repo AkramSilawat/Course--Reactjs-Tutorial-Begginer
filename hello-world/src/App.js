@@ -19,6 +19,9 @@ import Form from './components/Form'
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+
 
 class App extends Component {
   render() {
@@ -71,7 +74,11 @@ class App extends Component {
         {/* <LifecycleA /> */}
 
         {/* <FragmentDemo /> */}
-        <Table />
+        {/* <Table /> */}
+
+      {/* <PureComp /> */}
+
+      {/* <ParentComp /> */}
 
 
       </div>
