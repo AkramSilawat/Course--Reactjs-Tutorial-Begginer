@@ -17,6 +17,8 @@ import './appStyles.css'
 // import styles from './appStyles.module.css/'
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 class App extends Component {
   render() {
@@ -66,7 +68,10 @@ class App extends Component {
 
         {/* <Form /> */}
 
-        <LifecycleA />
+        {/* <LifecycleA /> */}
+
+        {/* <FragmentDemo /> */}
+        <Table />
 
 
       </div>
