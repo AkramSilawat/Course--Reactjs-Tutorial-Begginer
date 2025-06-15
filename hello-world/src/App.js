@@ -78,7 +78,7 @@ class App extends Component {
 
       {/* <PureComp /> */}
 
-      {/* <ParentComp /> */}
+      <ParentComp />
 
 
       </div>
