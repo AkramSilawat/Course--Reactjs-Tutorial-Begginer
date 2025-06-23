@@ -7,3 +7,5 @@ function FRInput() {
         </div>
     )
 }
+
+export default FRInput

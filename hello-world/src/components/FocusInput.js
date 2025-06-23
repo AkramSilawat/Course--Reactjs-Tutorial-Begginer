@@ -4,7 +4,7 @@ import Input from './Input'
 class FocusInput extends Component {
     constructor(props){
         super(props)
-        this.comoinentRef = React.createRef()
+        this.componentRef = React.createRef()
     }
 
     clickHandler = () => {

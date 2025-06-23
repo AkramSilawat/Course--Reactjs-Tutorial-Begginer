@@ -15,6 +15,7 @@ class RefsDemo extends Component {
     componentDidMount() {
         if (this.cbRef){
             this.cbRef.focus()
+            this.cbRef.value = 'Akram'
         }
         // this.inputRef.current.focus()
         // console.log(this.inputRef)

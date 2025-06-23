@@ -23,6 +23,8 @@ import PureComp from './components/PureComp';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput';
+import MemoComp from './components/MemoComp';
 
 class App extends Component {
   render() {
@@ -77,13 +79,17 @@ class App extends Component {
         {/* <FragmentDemo /> */}
         {/* <Table /> */}
 
+        {/* <MemoComp /> */}
+
       {/* <PureComp /> */}
 
       {/* <ParentComp /> */}
 
       {/* <RefsDemo /> */}
 
-      <FocusInput />
+      {/* <FocusInput /> */}
+
+      <FRParentInput />
 
 
       </div>
