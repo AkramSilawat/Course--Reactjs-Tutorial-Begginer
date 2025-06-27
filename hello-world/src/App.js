@@ -25,6 +25,11 @@ import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput'
 import FRParentInput from './components/FRParentInput';
 import MemoComp from './components/MemoComp';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends Component {
   render() {
@@ -81,17 +86,37 @@ class App extends Component {
 
         {/* <MemoComp /> */}
 
-      {/* <PureComp /> */}
+        {/* <PureComp /> */}
 
-      {/* <ParentComp /> */}
+        {/* <ParentComp /> */}
 
-      {/* <RefsDemo /> */}
+        {/* <RefsDemo /> */}
 
-      {/* <FocusInput /> */}
+        {/* <FocusInput /> */}
 
-      <FRParentInput />
+        {/* <FRParentInput /> */}
+
+        {/* <PortalDemo /> */}
 
 
+
+
+        {/* <ErrorBoundary>
+          <Hero heroName="Batman" />
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <Hero heroName="Superman" />
+        </ErrorBoundary>
+        
+        <ErrorBoundary>
+          <Hero heroName="Joker" />
+        </ErrorBoundary> */}
+
+
+
+          <ClickCounter />
+          <HoverCounter />
       </div>
     );
   }
