@@ -115,7 +115,7 @@ class App extends Component {
 
 
 
-          <ClickCounter />
+          <ClickCounter name= 'Vishwas '/>
           <HoverCounter />
       </div>
     );
