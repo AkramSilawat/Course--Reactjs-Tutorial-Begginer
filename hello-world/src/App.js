@@ -31,7 +31,10 @@ import ErrorBoundary from './components/ErrrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
-import HoveredCounterTwo from './components/HoverCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User'
+import CounterTwo from './components/CounterTwo';
+
 
 class App extends Component {
   render() {
@@ -117,11 +120,22 @@ class App extends Component {
 
 
 
-          {/* <ClickCounter name= 'Vishwas '/>
+        {/* <ClickCounter name= 'Vishwas '/>
           <HoverCounter /> */}
 
-          <ClickCounterTwo />
-          <HoveredCounterTwo />
+        {/* <ClickCounterTwo />
+        <HoveredCounterTwo />
+        <User rendar={(isLoggedIn) => isLoggedIn ? "Vishwas" : 'Guest'} /> */}
+        <CounterTwo
+          render={(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
+        <CounterTwo
+          render={(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
       </div>
     );
   }
