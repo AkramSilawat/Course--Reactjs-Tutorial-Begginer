@@ -36,6 +36,7 @@ import User from './components/User'
 import CounterTwo from './components/CounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
+import PostList from './components/PostList';
 
 
 class App extends Component {
@@ -142,9 +143,12 @@ class App extends Component {
         /> */}
 
 
-        <UserProvider value={'Vishwas'}>
+        {/* <UserProvider value={'Vishwas'}>
           <ComponentC />
-        </UserProvider>
+        </UserProvider> */}
+
+
+        <PostList />
       </div>
     );
   }
