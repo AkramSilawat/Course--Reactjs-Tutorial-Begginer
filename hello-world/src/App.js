@@ -37,7 +37,7 @@ import CounterTwo from './components/CounterTwo';
 import ComponentC from './components/ComponentC';
 import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
-
+import PostForm from './components/PostForm'
 
 class App extends Component {
   render() {
@@ -148,7 +148,8 @@ class App extends Component {
         </UserProvider> */}
 
 
-        <PostList />
+        {/* <PostList /> */}
+        <PostForm />
       </div>
     );
   }
