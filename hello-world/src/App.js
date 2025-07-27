@@ -39,6 +39,10 @@ import { UserProvider } from './components/userContext';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm'
 
+
+import ClassCounter from './components/State-Hooks/ClassCounter';
+import HooksCounter from './components/State-Hooks/HooksCounter';
+
 class App extends Component {
   render() {
     return (
@@ -149,7 +153,16 @@ class App extends Component {
 
 
         {/* <PostList /> */}
-        <PostForm />
+        {/* <PostForm /> */}
+
+
+        
+      {/* **--------***----------***-----------**
+
+      // --- React Hooks --- */}
+
+      {/* <ClassCounter /> */}
+      <HooksCounter />
       </div>
     );
   }
