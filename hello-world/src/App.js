@@ -42,6 +42,7 @@ import PostForm from './components/PostForm'
 
 import ClassCounter from './components/State-Hooks/ClassCounter';
 import HooksCounter from './components/State-Hooks/HooksCounter';
+import HooksCounterTwo from './HooksCounterTwo';
 
 class App extends Component {
   render() {
@@ -50,6 +51,8 @@ class App extends Component {
 
         {/* <Hello /> */}
 
+        {/* <Greet /> */}
+          
         {/* <Greet name="Bruce" heroName="Batman">
           <p>Paired Tag: This is children props</p>
         </Greet> */}
@@ -60,7 +63,6 @@ class App extends Component {
         {/* <Greet name="Akku" heroName="spiderman" children={<b>Self-Closing Tag: Children prop</b>} /> */}
         {/* <Greet name="Diana" heroName="Wonder Woman" /> */}
         {/* <NameExportGreet /> */}
-
 
         {/* <Welcome name ="Bruce" heroName="Batman"/> */}
         {/* <Welcome name ="Clark" heroName="Superman"/> */}
@@ -162,7 +164,9 @@ class App extends Component {
       // --- React Hooks --- */}
 
       {/* <ClassCounter /> */}
-      <HooksCounter />
+      {/* <HooksCounter /> */}
+
+      {/* <HooksCounterTwo /> */}
       </div>
     );
   }
