@@ -80,7 +80,7 @@ class App extends Component {
 
         {/* <ParentComponent /> */}
 
-        {/* <UserGreeting /> */}
+        <UserGreeting />
 
         {/* <NameList /> */}
 
