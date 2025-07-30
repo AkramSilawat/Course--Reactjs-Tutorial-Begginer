@@ -42,7 +42,7 @@ import PostForm from './components/PostForm'
 
 import ClassCounter from './components/State-Hooks/ClassCounter';
 import HooksCounter from './components/State-Hooks/HooksCounter';
-import HooksCounterTwo from './HooksCounterTwo';
+import HooksCounterTwo from './components/State-Hooks/HooksCounterTwo';
 
 class App extends Component {
   render() {
@@ -80,18 +80,18 @@ class App extends Component {
 
         {/* <ParentComponent /> */}
 
-        <UserGreeting />
+        {/* <UserGreeting /> */}
 
         {/* <NameList /> */}
 
 
         {/* <Stylesheet primary={true} /> */}
-        {/* <Inline /> */}
+        {/* <Inline />  */}
         {/* <h1 className='error'>Error</h1> */}
         {/* <h1 className={styles.success}>Success</h1> */}
 
 
-        {/* <Form /> */}
+        <Form />
 
         {/* <LifecycleA /> */}
 
