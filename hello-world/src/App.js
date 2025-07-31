@@ -91,9 +91,9 @@ class App extends Component {
         {/* <h1 className={styles.success}>Success</h1> */}
 
 
-        <Form />
+        {/* <Form /> */}
 
-        {/* <LifecycleA /> */}
+        <LifecycleA />
 
         {/* <FragmentDemo /> */}
         {/* <Table /> */}
