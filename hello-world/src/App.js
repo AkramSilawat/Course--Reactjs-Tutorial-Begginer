@@ -43,6 +43,7 @@ import PostForm from './components/PostForm'
 import ClassCounter from './components/State-Hooks/ClassCounter';
 import HooksCounter from './components/State-Hooks/HooksCounter';
 import HooksCounterTwo from './components/State-Hooks/HooksCounterTwo';
+import CounterFuntional from './components/CounterFuntional';
 
 class App extends Component {
   render() {
@@ -72,6 +73,7 @@ class App extends Component {
         {/* <Message /> */}
 
         {/* <Counter /> */}
+        <CounterFuntional />
 
         {/* <FunctionClick /> */}
         {/* <ClassClick /> */}
@@ -93,7 +95,7 @@ class App extends Component {
 
         {/* <Form /> */}
 
-        <LifecycleA />
+        {/* <LifecycleA /> */}
 
         {/* <FragmentDemo /> */}
         {/* <Table /> */}
