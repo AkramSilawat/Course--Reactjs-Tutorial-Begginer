@@ -34,16 +34,17 @@ import './App.css';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User'
 // import CounterTwo from './components/CounterTwo';
-import ComponentC from './components/ComponentC';
-import { UserProvider } from './components/userContext';
+// import ComponentC from './components/ComponentC';
+// import { UserProvider } from './components/userContext';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm'
 
+import CounterFuntional from './components/CounterFuntional';
 
-// import ClassCounter from './components/State-Hooks/ClassCounter';
-// import HooksCounter from './components/State-Hooks/HooksCounter';
-// import HooksCounterTwo from './components/State-Hooks/HooksCounterTwo';
-// import CounterFuntional from './components/CounterFuntional';
+import ClassCounter from './components/State-Hooks/ClassCounter';
+import HooksCounter from './components/State-Hooks/HooksCounter';
+import HooksCounterTwo from './components/State-Hooks/HooksCounterTwo';
+import HookCounterThree from './components/State-Hooks/HookCounterThree';
 
 class App extends Component {
   render() {
@@ -172,8 +173,9 @@ class App extends Component {
 
       {/* <ClassCounter /> */}
       {/* <HooksCounter /> */}
-
       {/* <HooksCounterTwo /> */}
+      <HookCounterThree />
+
       </div>
     );
   }
