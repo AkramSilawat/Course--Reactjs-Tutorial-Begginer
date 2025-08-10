@@ -6,7 +6,7 @@ class PostForm extends Component {
         super(props)
 
         this.state = {
-            userId: '',
+            userId: 'id001',
             title: '',
             body: ''
         }
@@ -17,14 +17,14 @@ class PostForm extends Component {
     }
 
     submitHandler = e => {
-        e.preventDefult()
+        e.preventDefault();
         console.log(this.state)
-        axios.post('https://jsonplacholder.typicode.com/posts', this.state)
+        axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
             .then(response => {
-                console.log(response)
+                console.log('response', response)
             })
             .catch(error => {
-                console.log(error)
+                console.log('error', error)
             })
     }
 
@@ -34,7 +34,10 @@ class PostForm extends Component {
             <div>
                 <form onSubmit={this.submitHandler}>
                     <div>
+                        <label htmlFor='user-id'>User Id: </label>
                         <input
+                            id="user-id"
+                            placeholder='Enter user id'
                             type="text"
                             name="userId"
                             value={userId}
@@ -42,7 +45,10 @@ class PostForm extends Component {
                         />
                     </div>
                     <div>
+                        <label htmlFor='title'>Title: </label>
                         <input
+                            id="title"
+                            placeholder='Enter title'
                             type="text"
                             name="title"
                             value={title}
@@ -50,7 +56,10 @@ class PostForm extends Component {
                         />
                     </div>
                     <div>
+                        <label htmlFor='body'>Body: </label>
                         <input
+                            id="body"
+                            placeholder='Enter body'
                             type="text"
                             name="body"
                             value={body}
