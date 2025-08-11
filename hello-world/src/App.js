@@ -46,6 +46,8 @@ import HooksCounter from './components/State-Hooks/HooksCounter';
 import HooksCounterTwo from './components/State-Hooks/HooksCounterTwo';
 import HookCounterThree from './components/State-Hooks/HookCounterThree';
 import HookCounterFour from './components/State-Hooks/HookCounterFour';
+import ClassCounterOne from './components/State-Hooks/ClassCounterOne';
+import HookCounterOne from './components/State-Hooks/HookCounterOne';
 
 class App extends Component {
   render() {
@@ -176,7 +178,9 @@ class App extends Component {
       {/* <HooksCounter /> */}
       {/* <HooksCounterTwo /> */}
       {/* <HookCounterThree /> */}
-      <HookCounterFour />
+      {/* <HookCounterFour /> */}
+      {/* <ClassCounterOne /> */}
+      <HookCounterOne />
 
       </div>
     );
