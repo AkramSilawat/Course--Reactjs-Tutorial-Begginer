@@ -48,6 +48,8 @@ import HookCounterThree from './components/State-Hooks/HookCounterThree';
 import HookCounterFour from './components/State-Hooks/HookCounterFour';
 import ClassCounterOne from './components/State-Hooks/ClassCounterOne';
 import HookCounterOne from './components/State-Hooks/HookCounterOne';
+import ClassMouse from './components/State-Hooks/ClassMouse';
+import HookMouse from './components/State-Hooks/HookMouse';
 
 class App extends Component {
   render() {
@@ -180,7 +182,9 @@ class App extends Component {
       {/* <HookCounterThree /> */}
       {/* <HookCounterFour /> */}
       {/* <ClassCounterOne /> */}
-      <HookCounterOne />
+      {/* <HookCounterOne /> */}
+      {/* <ClassMouse /> */}
+      <HookMouse />
 
       </div>
     );
