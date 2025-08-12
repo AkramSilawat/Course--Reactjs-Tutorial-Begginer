@@ -50,6 +50,7 @@ import ClassCounterOne from './components/State-Hooks/ClassCounterOne';
 import HookCounterOne from './components/State-Hooks/HookCounterOne';
 import ClassMouse from './components/State-Hooks/ClassMouse';
 import HookMouse from './components/State-Hooks/HookMouse';
+import MouseContainer from './components/State-Hooks/MouseContainer';
 
 class App extends Component {
   render() {
@@ -184,7 +185,8 @@ class App extends Component {
       {/* <ClassCounterOne /> */}
       {/* <HookCounterOne /> */}
       {/* <ClassMouse /> */}
-      <HookMouse />
+      {/* <HookMouse /> */}
+      <MouseContainer />
 
       </div>
     );

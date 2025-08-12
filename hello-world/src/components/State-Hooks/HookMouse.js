@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
-function HookMouse(){
-     
+function HookMouse() {
+
     const [x, setX] = useState(0)
     const [y, setY] = useState(0)
 
@@ -14,6 +14,11 @@ function HookMouse(){
     useEffect(() => {
         console.log('useEffect called')
         window.addEventListener('mousemove', logMousePosition)
+
+        return () => {
+            console.log('Component unmounting code')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
     }, [])
 
     return (
