@@ -30,6 +30,7 @@ import axios from "axios";
 // }
 
 
+
 //------>  Part - 02 <------ 
 
 // function DataFetching() {
@@ -55,7 +56,8 @@ import axios from "axios";
 // }
 
 
-//------>  Part - 03 <------ 
+
+// ------>  Part - 03 <------ 
 
 function DataFetching() {
     const [post, setPost] = useState({})
