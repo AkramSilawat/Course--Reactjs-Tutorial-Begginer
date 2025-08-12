@@ -53,6 +53,7 @@ import HookMouse from './components/State-Hooks/HookMouse';
 import MouseContainer from './components/State-Hooks/MouseContainer';
 import IntervalClassCounter from './components/State-Hooks/IntervalClassCounter';
 import IntervalHookCounter from './components/State-Hooks/IntervalClassCounter';
+import DataFetching from './components/State-Hooks/DataFetching';
 
 class App extends Component {
   render() {
@@ -191,6 +192,7 @@ class App extends Component {
       {/* <MouseContainer /> */}
       {/* <IntervalClassCounter />  */}
       {/* <IntervalHookCounter /> */}
+      <DataFetching />
 
       </div>
     );
