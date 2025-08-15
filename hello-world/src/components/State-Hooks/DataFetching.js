@@ -31,6 +31,7 @@ import axios from "axios";
 
 
 
+
 //------>  Part - 02 <------ 
 
 // function DataFetching() {
@@ -79,7 +80,7 @@ function DataFetching() {
             })
     }, [idFromButtonClick])
 
-    
+
     return (
         <div>
             <input type="text" value={id} onChange={e => setId(e.target.value)} />
