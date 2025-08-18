@@ -56,6 +56,7 @@ import IntervalHookCounter from './components/State-Hooks/IntervalClassCounter';
 import DataFetching from './components/State-Hooks/DataFetching';
 // import UserContext from './components/userContext';
 import ComponentC from './components/ComponentC';
+import CounterOne from './components/State-Hooks/CounterOne';
 
 // class App extends Component {
 //   render() {
@@ -210,11 +211,13 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className='App'>
-      <UserContext.Provider value={'Akram'}>
+      {/* <UserContext.Provider value={'Akram'}>
         <ChannelContext.Provider value={'Codevolution'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      <CounterOne />
     </div>
   )
 }
