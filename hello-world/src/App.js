@@ -57,6 +57,7 @@ import DataFetching from './components/State-Hooks/DataFetching';
 // import UserContext from './components/userContext';
 import ComponentC from './components/ComponentC';
 import CounterOne from './components/State-Hooks/CounterOne';
+import CounterTwo from './components/State-Hooks/CounterTwo';
 
 // class App extends Component {
 //   render() {
@@ -217,7 +218,9 @@ function App() {
         </ChannelContext.Provider>
       </UserContext.Provider> */}
 
-      <CounterOne />
+      {/* <CounterOne /> */}
+
+      <CounterTwo />
     </div>
   )
 }
