@@ -54,80 +54,82 @@ import MouseContainer from './components/State-Hooks/MouseContainer';
 import IntervalClassCounter from './components/State-Hooks/IntervalClassCounter';
 import IntervalHookCounter from './components/State-Hooks/IntervalClassCounter';
 import DataFetching from './components/State-Hooks/DataFetching';
+// import UserContext from './components/userContext';
+import ComponentC from './components/ComponentC';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className="App">
 
-        {/* <Hello /> */}
+{/* <Hello /> */ }
 
-        {/* <Greet /> */}
-          
-        {/* <Greet name="Bruce" heroName="Batman">
+{/* <Greet /> */ }
+
+{/* <Greet name="Bruce" heroName="Batman">
           <p>Paired Tag: This is children props</p>
         </Greet> */}
-        {/* <Greet name="Clark" heroName="Superman">
+{/* <Greet name="Clark" heroName="Superman">
           <button>Action</button>
         </Greet> */}
 
-        {/* <Greet name="Akku" heroName="spiderman" children={<b>Self-Closing Tag: Children prop</b>} /> */}
-        {/* <Greet name="Diana" heroName="Wonder Woman" /> */}
-        {/* <NameExportGreet /> */}
+{/* <Greet name="Akku" heroName="spiderman" children={<b>Self-Closing Tag: Children prop</b>} /> */ }
+{/* <Greet name="Diana" heroName="Wonder Woman" /> */ }
+{/* <NameExportGreet /> */ }
 
-        {/* <Welcome name ="Bruce" heroName="Batman"/> */}
-        {/* <Welcome name ="Clark" heroName="Superman"/> */}
-        {/* <Welcome name ="Diana" heroName="Wonder Woman"/> */}
-
-
-        {/* <Message /> */}
-
-        {/* <Counter /> */}
-        {/* <CounterFuntional /> */}
-
-        {/* <FunctionClick /> */}
-        {/* <ClassClick /> */}
-
-        {/* <EventBind /> */}
-
-        {/* <ParentComponent /> */}
-
-        {/* <UserGreeting /> */}
-
-        {/* <NameList /> */}
+{/* <Welcome name ="Bruce" heroName="Batman"/> */ }
+{/* <Welcome name ="Clark" heroName="Superman"/> */ }
+{/* <Welcome name ="Diana" heroName="Wonder Woman"/> */ }
 
 
-        {/* <Stylesheet primary={true} /> */}
-        {/* <Inline />  */}
-        {/* <h1 className='error'>Error</h1> */}
-        {/* <h1 className={styles.success}>Success</h1> */}
+{/* <Message /> */ }
+
+{/* <Counter /> */ }
+{/* <CounterFuntional /> */ }
+
+{/* <FunctionClick /> */ }
+{/* <ClassClick /> */ }
+
+{/* <EventBind /> */ }
+
+{/* <ParentComponent /> */ }
+
+{/* <UserGreeting /> */ }
+
+{/* <NameList /> */ }
 
 
-        {/* <Form /> */}
-
-        {/* <LifecycleA /> */}
-
-        {/* <FragmentDemo /> */}
-        {/* <Table /> */}
-
-        {/* <MemoComp /> */}
-
-        {/* <PureComp /> */}
-
-        {/* <ParentComp /> */}
-
-        {/* <RefsDemo /> */}
-
-        {/* <FocusInput /> */}
-
-        {/* <FRParentInput /> */}
-
-        {/* <PortalDemo /> */}
+{/* <Stylesheet primary={true} /> */ }
+{/* <Inline />  */ }
+{/* <h1 className='error'>Error</h1> */ }
+{/* <h1 className={styles.success}>Success</h1> */ }
 
 
+{/* <Form /> */ }
+
+{/* <LifecycleA /> */ }
+
+{/* <FragmentDemo /> */ }
+{/* <Table /> */ }
+
+{/* <MemoComp /> */ }
+
+{/* <PureComp /> */ }
+
+{/* <ParentComp /> */ }
+
+{/* <RefsDemo /> */ }
+
+{/* <FocusInput /> */ }
+
+{/* <FRParentInput /> */ }
+
+{/* <PortalDemo /> */ }
 
 
-        {/* <ErrorBoundary>
+
+
+{/* <ErrorBoundary>
           <Hero heroName="Batman" />
         </ErrorBoundary>
         
@@ -141,14 +143,14 @@ class App extends Component {
 
 
 
-        {/* <ClickCounter name= 'Vishwas '/>
+{/* <ClickCounter name= 'Vishwas '/>
           <HoverCounter /> */}
 
-        {/* <ClickCounterTwo />
+{/* <ClickCounterTwo />
         <HoveredCounterTwo />
         <User rendar={(isLoggedIn) => isLoggedIn ? "Vishwas" : 'Guest'} /> */}
 
-        {/* <CounterTwo
+{/* <CounterTwo
           render={(count, incrementCount) => (
             <ClickCounterTwo count={count} incrementCount={incrementCount} />
           )}
@@ -161,42 +163,60 @@ class App extends Component {
         /> */}
 
 
-{/* Prop Driling: Parent se children me har component me data karna Prop Driling kahlata hai.  */}
+{/* Prop Driling: Parent se children me har component me data karna Prop Driling kahlata hai.  */ }
 
 {/* Prop Driling se bachne ke liye provider banaya jata hai.
-    jis component me data access karna he direct use use kar sakte hai.
-*/}
-        {/* <UserProvider value={'Vishwas'}>
+            jis component me data access karna he direct use use kar sakte hai.
+        */}
+{/* <UserProvider value={'Vishwas'}>
           <ComponentC />
         </UserProvider> */}
 
 
-        {/* <PostList /> */}
-        {/* <PostForm /> */}
+{/* <PostList /> */ }
+{/* <PostForm /> */ }
 
 
-        
-      {/* **--------***----------***-----------**
 
-      // --- React Hooks --- */}
+{/* **--------***----------***-----------**
 
-      {/* <ClassCounter /> */}
-      {/* <HooksCounter /> */}
-      {/* <HooksCounterTwo /> */}
-      {/* <HookCounterThree /> */}
-      {/* <HookCounterFour /> */}
-      {/* <ClassCounterOne /> */}
-      {/* <HookCounterOne /> */}
-      {/* <ClassMouse /> */}
-      {/* <HookMouse /> */}
-      {/* <MouseContainer /> */}
-      {/* <IntervalClassCounter />  */}
-      {/* <IntervalHookCounter /> */}
-      <DataFetching />
+        // --- React Hooks --- */}
 
-      </div>
-    );
-  }
+{/* <ClassCounter /> */ }
+{/* <HooksCounter /> */ }
+{/* <HooksCounterTwo /> */ }
+{/* <HookCounterThree /> */ }
+{/* <HookCounterFour /> */ }
+{/* <ClassCounterOne /> */ }
+{/* <HookCounterOne /> */ }
+{/* <ClassMouse /> */ }
+{/* <HookMouse /> */ }
+{/* <MouseContainer /> */ }
+{/* <IntervalClassCounter />  */ }
+{/* <IntervalHookCounter /> */ }
+{/* <DataFetching /> */ }
+
+
+//       </div>
+//     );
+//   }
+// }
+
+
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
+function App() {
+  return (
+    <div className='App'>
+      <UserContext.Provider value={'Akram'}>
+        <ChannelContext.Provider value={'Codevolution'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+    </div>
+  )
 }
 
 export default App;
