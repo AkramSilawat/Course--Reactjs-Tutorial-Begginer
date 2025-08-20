@@ -54,11 +54,14 @@ import MouseContainer from './components/State-Hooks/MouseContainer';
 import IntervalClassCounter from './components/State-Hooks/IntervalClassCounter';
 import IntervalHookCounter from './components/State-Hooks/IntervalClassCounter';
 import DataFetching from './components/State-Hooks/DataFetching';
-// import UserContext from './components/userContext';
-import ComponentC from './components/ComponentC';
+import UserContext from './components/userContext';
 import CounterOne from './components/State-Hooks/CounterOne';
 import CounterTwo from './components/State-Hooks/CounterTwo';
 import CounterThree from './components/State-Hooks/CounterThree';
+import ComponentA from './components/State-Hooks/ComponentA';
+import ComponentB from './components/State-Hooks/ComponentB';
+import ComponentC from './components/ComponentC';
+
 
 // class App extends Component {
 //   render() {
@@ -206,9 +209,9 @@ import CounterThree from './components/State-Hooks/CounterThree';
 // }
 
 
-
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
+
 
 function App() {
   return (
@@ -221,9 +224,14 @@ function App() {
 
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
-      <CounterThree />
+      {/* <CounterThree /> */}
     </div>
   )
 }
+
+
+
+{/*--> 22  useReducer With useContext */ }
+
 
 export default App;
