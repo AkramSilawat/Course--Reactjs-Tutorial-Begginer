@@ -1,5 +1,5 @@
 // import React, { useReducer} from 'react';
-import React, {Component} from 'react';
+import React, { Component, useReducer } from 'react';
 import './App.css';
 // import Hello from './components/Hello';
 // import Greet, { NameExportGreet } from './components/Greet';
@@ -59,6 +59,8 @@ import CounterOne from './components/State-Hooks/CounterOne';
 import CounterTwo from './components/State-Hooks/CounterTwo';
 import CounterThree from './components/State-Hooks/CounterThree';
 import ComponentC from './components/State-Hooks/ComponentC';
+import ComponentA from './components/State-Hooks/ComponentA';
+import ComponentB from './components/State-Hooks/ComponentB';
 
 
 // class App extends Component {
@@ -186,8 +188,8 @@ import ComponentC from './components/State-Hooks/ComponentC';
 
         // --- React Hooks --- */}
 
- {/* <ClassCounter />  */}
- {/* <HooksCounter />  */}
+{/* <ClassCounter />  */ }
+{/* <HooksCounter />  */ }
 {/* <HooksCounterTwo /> */ }
 {/* <HookCounterThree /> */ }
 {/* <HookCounterFour /> */ }
@@ -201,32 +203,67 @@ import ComponentC from './components/State-Hooks/ComponentC';
 {/* <DataFetching /> */ }
 
 
-      {/* </div>
+{/* </div>
     );
   }
 }  */}
 
 
 
+// -> 16 To 21 useContext Hook Part - 1,2
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// function App() {
+//   return (
+//     <div className='App'>
+//       {/* <UserContext.Provider value={'Akram'}>
+//         <ChannelContext.Provider value={'Codevolution'}>
+//           <ComponentC />
+//         </ChannelContext.Provider>
+//       </UserContext.Provider> */}
 
+//       {/* <CounterOne /> */}
+//       {/* <CounterTwo /> */}
+//       {/* <CounterThree /> */}
+
+//     </div>
+//   )
+// }
+
+
+
+// -> 22 useReducer With useContext
+
+export const CountContext = React.createContext()
+// export const ChannelContext = React.createContext()
+
+
+const initialState = 0
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return state + 1
+    case 'decrement':
+      return state - 1
+    case 'reset':
+      return initialState
+    default:
+      return state
+  }
+}
 
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
   return (
-    <div className='App'>
-      <UserContext.Provider value={'Akram'}>
-        <ChannelContext.Provider value={'Codevolution'}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
-
-      {/* <CounterOne /> */}
-      {/* <CounterTwo /> */}
-      {/* <CounterThree /> */}
-
-    </div>
+    <CountContext.Provider
+      value={{ countState: count, countDispatch: dispatch }}
+    >
+      <div className='App'>
+        Count - {count}
+        <ComponentA />
+        <ComponentB />
+        <ComponentC />
+      </div>
+    </CountContext.Provider>
   )
 }
 
