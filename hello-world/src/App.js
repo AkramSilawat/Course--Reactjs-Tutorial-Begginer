@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+// import React, { useReducer} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 // import Hello from './components/Hello';
 // import Greet, { NameExportGreet } from './components/Greet';
@@ -34,7 +35,6 @@ import './App.css';
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import User from './components/User'
 // import CounterTwo from './components/CounterTwo';
-// import ComponentC from './components/ComponentC';
 // import { UserProvider } from './components/userContext';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm'
@@ -54,13 +54,11 @@ import MouseContainer from './components/State-Hooks/MouseContainer';
 import IntervalClassCounter from './components/State-Hooks/IntervalClassCounter';
 import IntervalHookCounter from './components/State-Hooks/IntervalClassCounter';
 import DataFetching from './components/State-Hooks/DataFetching';
-import UserContext from './components/userContext';
+// import UserContext from './components/userContext';
 import CounterOne from './components/State-Hooks/CounterOne';
 import CounterTwo from './components/State-Hooks/CounterTwo';
 import CounterThree from './components/State-Hooks/CounterThree';
-import ComponentA from './components/State-Hooks/ComponentA';
-import ComponentB from './components/State-Hooks/ComponentB';
-import ComponentC from './components/ComponentC';
+import ComponentC from './components/State-Hooks/ComponentC';
 
 
 // class App extends Component {
@@ -188,8 +186,8 @@ import ComponentC from './components/ComponentC';
 
         // --- React Hooks --- */}
 
-{/* <ClassCounter /> */ }
-{/* <HooksCounter /> */ }
+ {/* <ClassCounter />  */}
+ {/* <HooksCounter />  */}
 {/* <HooksCounterTwo /> */ }
 {/* <HookCounterThree /> */ }
 {/* <HookCounterFour /> */ }
@@ -203,10 +201,12 @@ import ComponentC from './components/ComponentC';
 {/* <DataFetching /> */ }
 
 
-//       </div>
-//     );
-//   }
-// }
+      {/* </div>
+    );
+  }
+}  */}
+
+
 
 
 export const UserContext = React.createContext()
@@ -216,22 +216,18 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className='App'>
-      {/* <UserContext.Provider value={'Akram'}>
+      <UserContext.Provider value={'Akram'}>
         <ChannelContext.Provider value={'Codevolution'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider> */}
+      </UserContext.Provider>
 
       {/* <CounterOne /> */}
       {/* <CounterTwo /> */}
       {/* <CounterThree /> */}
+
     </div>
   )
 }
-
-
-
-{/*--> 22  useReducer With useContext */ }
-
 
 export default App;

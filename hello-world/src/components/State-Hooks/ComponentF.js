@@ -1,15 +1,29 @@
-import React, { useContext } from "react";
-import { CountContext } from "../../App";
+import React from "react";
+import { UserContext, ChannelContext } from "../../App";
 
-function ComponentF() {
-    const countContext = useContext(CountContext)
+
+function ComponentF(){
     return (
-        <div>
-            Component F
-            <button onClick={() => countContext.countDispatch('increment')}>Increment</button>
-            <button onClick={() => countContext.countDispatch('decrement')}>Decrememt</button>
-            <button onClick={() => countContext.countDispatch('reset')}>Reset</button>
-
+         <div>
+            <UserContext.Consumer>
+                {
+                    user => {
+                        return (
+                            <ChannelContext.Consumer>
+                                {
+                                    channel => {
+                                        return (
+                                            <div>
+                                                User context value {user}, channel context valuse {channel}
+                                            </div>
+                                        )
+                                    }
+                                }
+                            </ChannelContext.Consumer>
+                        )
+                    }
+                }
+            </UserContext.Consumer>
         </div>
     )
 }
