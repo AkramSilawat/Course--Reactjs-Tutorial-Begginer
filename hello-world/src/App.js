@@ -58,9 +58,10 @@ import DataFetching from './components/State-Hooks/DataFetching';
 import CounterOne from './components/State-Hooks/CounterOne';
 import CounterTwo from './components/State-Hooks/CounterTwo';
 import CounterThree from './components/State-Hooks/CounterThree';
-import ComponentC from './components/State-Hooks/ComponentC';
-import ComponentA from './components/State-Hooks/ComponentA';
-import ComponentB from './components/State-Hooks/ComponentB';
+// import ComponentC from './components/State-Hooks/ComponentC';
+// import ComponentA from './components/State-Hooks/ComponentA';
+// import ComponentB from './components/State-Hooks/ComponentB';
+import DataFetchingOne from './components/State-Hooks/DataFetchingOne';
 
 
 // class App extends Component {
@@ -233,37 +234,45 @@ import ComponentB from './components/State-Hooks/ComponentB';
 
 // -> 22 useReducer With useContext
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 // export const ChannelContext = React.createContext()
 
 
-const initialState = 0
-const reducer = (state, action) => {
-  switch (action) {
-    case 'increment':
-      return state + 1
-    case 'decrement':
-      return state - 1
-    case 'reset':
-      return initialState
-    default:
-      return state
-  }
-}
+// const initialState = 0
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1
+//     case 'decrement':
+//       return state - 1
+//     case 'reset':
+//       return initialState
+//     default:
+//       return state
+//   }
+// }
+
+// function App() {
+//   const [count, dispatch] = useReducer(reducer, initialState)
+//   return (
+//     <CountContext.Provider
+//       value={{ countState: count, countDispatch: dispatch }}
+//     >
+//       <div className='App'>
+//         Count - {count}
+//         <ComponentA />
+//         <ComponentB />
+//         <ComponentC />
+//       </div>
+//     </CountContext.Provider>
+//   )
+// }
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
   return (
-    <CountContext.Provider
-      value={{ countState: count, countDispatch: dispatch }}
-    >
-      <div className='App'>
-        Count - {count}
-        <ComponentA />
-        <ComponentB />
-        <ComponentC />
-      </div>
-    </CountContext.Provider>
+    <div className='App'>
+      <DataFetchingOne />
+    </div>
   )
 }
 
