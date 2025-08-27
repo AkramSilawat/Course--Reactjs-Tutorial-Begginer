@@ -7,7 +7,7 @@ function DataFetchingOne() {
     const [post, setPost] = useState({})
 
     useEffect(() => {
-        axios.get('https://jsonplaceholder.typicod.com/posts/1')
+        axios.get('https://jsonplaceholder.typicode.com/posts/1')
         .then(response => {
             setLoading(false)
             setPost(response.data)
