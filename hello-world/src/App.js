@@ -64,6 +64,7 @@ import CounterThree from './components/State-Hooks/CounterThree';
 import DataFetchingOne from './components/State-Hooks/DataFetchingOne';
 import DataFetchingTwo from './components/State-Hooks/DataFetchingTwo';
 import ParentComponent from './components/State-Hooks/ParentComponent';
+import Counter from './components/State-Hooks/Counter';
 
 
 // class App extends Component {
@@ -275,7 +276,8 @@ function App() {
     <div className='App'>
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <Counter />
     </div>
   )
 }
