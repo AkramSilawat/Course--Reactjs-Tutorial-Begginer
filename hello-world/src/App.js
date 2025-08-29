@@ -65,6 +65,7 @@ import DataFetchingOne from './components/State-Hooks/DataFetchingOne';
 import DataFetchingTwo from './components/State-Hooks/DataFetchingTwo';
 import ParentComponent from './components/State-Hooks/ParentComponent';
 import Counter from './components/State-Hooks/Counter';
+import FocusInput from './components/State-Hooks/FocusInput';
 
 
 // class App extends Component {
@@ -277,7 +278,8 @@ function App() {
       {/* <DataFetchingOne /> */}
       {/* <DataFetchingTwo /> */}
       {/* <ParentComponent /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <FocusInput />
     </div>
   )
 }
