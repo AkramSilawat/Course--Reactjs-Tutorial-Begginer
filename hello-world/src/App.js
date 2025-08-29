@@ -67,6 +67,7 @@ import ParentComponent from './components/State-Hooks/ParentComponent';
 import Counter from './components/State-Hooks/Counter';
 import FocusInput from './components/State-Hooks/FocusInput';
 import ClassTimer from './components/State-Hooks/ClassTimer';
+import HookTimer from './components/State-Hooks/HookTimer';
 
 
 // class App extends Component {
@@ -282,6 +283,7 @@ function App() {
       {/* <Counter /> */}
       {/* <FocusInput /> */}
       <ClassTimer />
+      <HookTimer />
     </div>
   )
 }
