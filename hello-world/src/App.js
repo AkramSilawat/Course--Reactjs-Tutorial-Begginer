@@ -68,6 +68,8 @@ import Counter from './components/State-Hooks/Counter';
 import FocusInput from './components/State-Hooks/FocusInput';
 import ClassTimer from './components/State-Hooks/ClassTimer';
 import HookTimer from './components/State-Hooks/HookTimer';
+import DocTitleOne from './components/State-Hooks/DocTitleOne';
+import DocTitleTwo from './components/State-Hooks/DocTitleTwo';
 
 
 // class App extends Component {
@@ -282,9 +284,12 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <Counter /> */}
       {/* <FocusInput /> */}
-      <ClassTimer />
-      <HookTimer />
+      {/* <ClassTimer />
+      <HookTimer /> */}
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
+  
   )
 }
 
