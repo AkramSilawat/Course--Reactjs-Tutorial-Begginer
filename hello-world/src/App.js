@@ -70,6 +70,9 @@ import ClassTimer from './components/State-Hooks/ClassTimer';
 import HookTimer from './components/State-Hooks/HookTimer';
 import DocTitleOne from './components/State-Hooks/DocTitleOne';
 import DocTitleTwo from './components/State-Hooks/DocTitleTwo';
+import CounterOnee from './components/State-Hooks/CounterOnee';
+import CounterTwoo from './components/State-Hooks/CounterTwoo';
+import useCounter from './components/State-Hooks/useCounter';
 
 
 // class App extends Component {
@@ -286,8 +289,11 @@ function App() {
       {/* <FocusInput /> */}
       {/* <ClassTimer />
       <HookTimer /> */}
-      <DocTitleOne />
-      <DocTitleTwo />
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
+      <CounterOnee />
+      <CounterTwoo />
+      <useCounter />
     </div>
   
   )
