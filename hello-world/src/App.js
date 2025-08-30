@@ -72,7 +72,7 @@ import DocTitleOne from './components/State-Hooks/DocTitleOne';
 import DocTitleTwo from './components/State-Hooks/DocTitleTwo';
 import CounterOnee from './components/State-Hooks/CounterOnee';
 import CounterTwoo from './components/State-Hooks/CounterTwoo';
-import useCounter from './components/State-Hooks/useCounter';
+import UserForm from './components/State-Hooks/UserForm';
 
 
 // class App extends Component {
@@ -291,9 +291,9 @@ function App() {
       <HookTimer /> */}
       {/* <DocTitleOne />
       <DocTitleTwo /> */}
-      <CounterOnee />
-      <CounterTwoo />
-      <useCounter />
+      {/* <CounterOnee />
+      <CounterTwoo /> */}
+      <UserForm />
     </div>
   
   )
