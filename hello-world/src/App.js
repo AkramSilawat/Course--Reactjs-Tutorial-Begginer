@@ -73,6 +73,23 @@ import DocTitleTwo from './components/State-Hooks/DocTitleTwo';
 import CounterOnee from './components/State-Hooks/CounterOnee';
 import CounterTwoo from './components/State-Hooks/CounterTwoo';
 import UserForm from './components/State-Hooks/UserForm';
+import { UseState } from './components/React-Render/UseState';
+
+
+{/*  --- React Render --- */}
+
+
+function App() {
+  return (
+    <div className='App'>
+      <UseState />
+    </div>
+  )
+}
+
+
+
+{/*  --- React Hooks --- */}
 
 
 // class App extends Component {
@@ -279,24 +296,25 @@ import UserForm from './components/State-Hooks/UserForm';
 //   )
 // }
 
-function App() {
-  return (
-    <div className='App'>
-      {/* <DataFetchingOne /> */}
-      {/* <DataFetchingTwo /> */}
-      {/* <ParentComponent /> */}
-      {/* <Counter /> */}
-      {/* <FocusInput /> */}
-      {/* <ClassTimer />
-      <HookTimer /> */}
-      {/* <DocTitleOne />
-      <DocTitleTwo /> */}
-      {/* <CounterOnee />
-      <CounterTwoo /> */}
-      <UserForm />
-    </div>
-  
-  )
-}
+
+// function App() {
+//   return (
+//     <div className='App'>
+//       {/* <DataFetchingOne /> */}
+//       {/* <DataFetchingTwo /> */}
+//       {/* <ParentComponent /> */}
+//       {/* <Counter /> */}
+//       {/* <FocusInput /> */}
+//       {/* <ClassTimer />
+//       <HookTimer /> */}
+//       {/* <DocTitleOne />
+//       <DocTitleTwo /> */}
+//       {/* <CounterOnee />
+//       <CounterTwoo /> */}
+//       <UserForm />
+//     </div>
+
+//   )
+// }
 
 export default App;
