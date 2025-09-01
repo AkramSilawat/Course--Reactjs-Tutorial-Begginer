@@ -74,15 +74,17 @@ import CounterOnee from './components/State-Hooks/CounterOnee';
 import CounterTwoo from './components/State-Hooks/CounterTwoo';
 import UserForm from './components/State-Hooks/UserForm';
 import { UseState } from './components/React-Render/UseState';
+import { UseReducer } from './components/React-Render/UseReducer';
+
 
 
 {/*  --- React Render --- */}
 
-
 function App() {
   return (
     <div className='App'>
-      <UseState />
+      {/* <UseState /> */}
+      <UseReducer />
     </div>
   )
 }
