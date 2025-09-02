@@ -76,6 +76,7 @@ import UserForm from './components/State-Hooks/UserForm';
 import { UseState } from './components/React-Render/UseState';
 import { UseReducer } from './components/React-Render/UseReducer';
 import { ObjectUseState } from './components/React-Render/ObjectUseState';
+import { ArrayUseState } from './components/React-Render/ArrayUseState';
 
 
 
@@ -86,7 +87,8 @@ function App() {
     <div className='App'>
       {/* <UseState /> */}
       {/* <UseReducer /> */}
-      <ObjectUseState />
+      {/* <ObjectUseState /> */}
+      <ArrayUseState />
     </div>
   )
 }
