@@ -75,6 +75,7 @@ import CounterTwoo from './components/State-Hooks/CounterTwoo';
 import UserForm from './components/State-Hooks/UserForm';
 import { UseState } from './components/React-Render/UseState';
 import { UseReducer } from './components/React-Render/UseReducer';
+import { ObjectUseState } from './components/React-Render/ObjectUseState';
 
 
 
@@ -84,7 +85,8 @@ function App() {
   return (
     <div className='App'>
       {/* <UseState /> */}
-      <UseReducer />
+      {/* <UseReducer /> */}
+      <ObjectUseState />
     </div>
   )
 }
