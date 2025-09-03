@@ -78,10 +78,13 @@ import { UseReducer } from './components/React-Render/UseReducer';
 import { ObjectUseState } from './components/React-Render/ObjectUseState';
 import { ArrayUseState } from './components/React-Render/ArrayUseState';
 import { Parent } from './components/React-Render/Parent';
+import { ParentOne } from './components/Optimization/ParentOne';
+import { ChildOne } from './components/Optimization/ChildOne';
+import { GrandParent } from './components/Optimization/GrandParent';
 
 
 
-{/*  --- React Render --- */}
+{/*  --- React Render --- */ }
 
 function App() {
   return (
@@ -90,14 +93,21 @@ function App() {
       {/* <UseReducer /> */}
       {/* <ObjectUseState /> */}
       {/* <ArrayUseState /> */}
-      <Parent />
+      {/* <Parent /> */}
+
+      {/* <ParentOne /> */}
+      {/* <ParentOne>
+        <ChildOne />
+      </ParentOne> */}
+
+      <GrandParent />
     </div>
   )
 }
 
 
 
-{/*  --- React Hooks --- */}
+{/*  --- React Hooks --- */ }
 
 
 // class App extends Component {
