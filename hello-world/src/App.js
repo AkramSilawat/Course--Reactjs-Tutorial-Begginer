@@ -77,6 +77,7 @@ import { UseState } from './components/React-Render/UseState';
 import { UseReducer } from './components/React-Render/UseReducer';
 import { ObjectUseState } from './components/React-Render/ObjectUseState';
 import { ArrayUseState } from './components/React-Render/ArrayUseState';
+import { Parent } from './components/React-Render/Parent';
 
 
 
@@ -88,7 +89,8 @@ function App() {
       {/* <UseState /> */}
       {/* <UseReducer /> */}
       {/* <ObjectUseState /> */}
-      <ArrayUseState />
+      {/* <ArrayUseState /> */}
+      <Parent />
     </div>
   )
 }
