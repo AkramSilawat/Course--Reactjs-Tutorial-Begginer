@@ -78,9 +78,10 @@ import { UseReducer } from './components/React-Render/UseReducer';
 import { ObjectUseState } from './components/React-Render/ObjectUseState';
 import { ArrayUseState } from './components/React-Render/ArrayUseState';
 import { Parent } from './components/React-Render/Parent';
-import { ParentOne } from './components/Optimization/ParentOne';
-import { ChildOne } from './components/Optimization/ChildOne';
-import { GrandParent } from './components/Optimization/GrandParent';
+import { ParentOne } from './components/React-Render/Optimization/ParentOne';
+import { ChildOne } from './components/React-Render/Optimization/ChildOne';
+import { GrandParent } from './components/React-Render/Optimization/GrandParent';
+import { ParentTwo } from './components/React-Render/Optimization/ParentTwo';
 
 
 
@@ -99,8 +100,8 @@ function App() {
       {/* <ParentOne>
         <ChildOne />
       </ParentOne> */}
-
-      <GrandParent />
+      {/* <GrandParent /> */}
+      <ParentTwo />
     </div>
   )
 }
