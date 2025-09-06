@@ -84,6 +84,7 @@ import { GrandParent } from './components/React-Render/Optimization/GrandParent'
 import { ParentTwo } from './components/React-Render/Optimization/ParentTwo';
 import { ParentThree } from './components/React-Render/Incorrect Optimizations/ParentThree';
 import { ParentFour } from './components/React-Render/Incorrect Optimizations/ParentFour';
+import { ContextParent } from './components/React-Render/Context/ContextParent';
 
 
 
@@ -105,7 +106,9 @@ function App() {
       {/* <GrandParent /> */}
       {/* <ParentTwo /> */}
       {/* <ParentThree /> */}
-      <ParentFour />
+      {/* <ParentFour /> */}
+
+      <ContextParent />
     </div>
   )
 }
