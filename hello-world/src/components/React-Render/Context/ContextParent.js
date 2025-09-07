@@ -1,10 +1,34 @@
 import React, { useState } from "react";
-import { MemoizedChilA } from "./ContextChildren";
+// import { MemoizedChilA } from "./ContextChildren";
+
+// ----> 15 Context And Memo <----
+
+// export const CountContext = React.createContext()
+// const CountProvider = CountContext.Provider
+
+// export const ContextParent = () => {
+//     const [count, setCount] = useState(0)
+
+//     console.log('ContextParent Render')
+//     return (
+//         <>
+//             <button onClick={() => setCount(c => c + 1)}>Count {count}</button>
+//             <CountProvider value={count}>
+//                 {/* <ChildA /> */}
+//                 <MemoizedChilA />
+//             </CountProvider>
+//         </>
+//     )
+// }
+
+
+
+// ----> 16 Context and Same Element Reference <-----
 
 export const CountContext = React.createContext()
 const CountProvider = CountContext.Provider
 
-export const ContextParent = () => {
+export const ContextParent = ({children}) => {
     const [count, setCount] = useState(0)
 
     console.log('ContextParent Render')
@@ -12,8 +36,7 @@ export const ContextParent = () => {
         <>
             <button onClick={() => setCount(c => c + 1)}>Count {count}</button>
             <CountProvider value={count}>
-                {/* <ChildA /> */}
-                <MemoizedChilA />
+              {children}
             </CountProvider>
         </>
     )
