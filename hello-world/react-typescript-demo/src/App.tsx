@@ -5,7 +5,7 @@ import { Greet } from './components/Greet'
 function App() {
     return (
         <div clssName='App'>
-            <Greet name='Akram' />
+            <Greet name='Akram' messageCount={20} />
 
         </div>
     )
