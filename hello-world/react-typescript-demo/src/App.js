@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-// import { Greet } from './components/Greet';
+import { Greet } from './components/Greet';
+import { Person } from './components/Person';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
       </header>
 
 
-      {/* <Greet name='Akram'/> */}
+      <Greet name='Akram' messageCount={20} isLoggedIn={true}/>
+
+      <Person />
     </div>
   );
 }
