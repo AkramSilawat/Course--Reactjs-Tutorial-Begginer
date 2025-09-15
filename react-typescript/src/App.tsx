@@ -54,6 +54,8 @@ function App() {
       />
       <Input value='' handleChange={(event) => console.log(event)} />
     </div>
+
+    
   )
 }
 
