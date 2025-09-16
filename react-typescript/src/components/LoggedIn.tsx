@@ -9,13 +9,16 @@ export const LoggedIn = () => {
      }
 
     const handleLogout = () => { 
-        setIsLoggedIn(0)
+        setIsLoggedIn(false)
+        // setIsLoggedIn(0)
+
     }
     return (
         <div>
             <button onClick={handleLogin}>Login</button>
             <button onClick={handleLogout}>Logout</button>
-            <div>User is {isLoggedIn.length ? 'logged in' : 'logged out'}</div>
+            <div>User is {isLoggedIn ? 'logged in' : 'logged out'}</div>
+            {/* <div>User is {isLoggedIn.length ? 'logged in' : 'logged out'}</div> */}
         </div>
     )
 }
