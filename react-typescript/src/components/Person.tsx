@@ -12,3 +12,16 @@ export const Person = (props: personName) => {
         </div>
     )
 }
+
+
+// -------> 08 - Props Types And Tips <------
+
+// import { personProps } from "./Person.types"
+
+// export const Person = (props: personProps) => {
+//     return (
+//         <div>
+//             {props.name.first} {props.name.last}
+//         </div>
+//     )
+// }

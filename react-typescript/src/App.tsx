@@ -53,9 +53,11 @@ function App() {
         console.log('Button clicked', event, id)
       }}
       /> */}
-      {/* <Input value='' handleChange={(event) => console.log(event)} /> */}
+      <Input value='' handleChange={(event) => console.log(event)} />
 
-      <Container styles={{border: '1px solid black', padding: '1rem'}}/>
+      {/* <Container styles={{border: '1px solid black', padding: '1rem'}}/> */}
+
+      
     </div>
 
     
