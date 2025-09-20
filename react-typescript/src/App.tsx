@@ -1,5 +1,6 @@
 import './App.css';
 import { Button } from './components/Button';
+import { Counter } from './components/class/Counter';
 import { Container } from './components/Container';
 import { Box } from './components/context/Box';
 import { ThemeContextProviderProps } from './components/context/ThemeContext';
@@ -11,6 +12,7 @@ import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+// import { Counter } from './components/state/Counter';
 import { Status } from './components/Status';
 
 function App() {
@@ -66,9 +68,11 @@ function App() {
         <Box />
       </ThemeContextProviderProps> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      <Counter message='The count value is' />
     </div>
 
 
