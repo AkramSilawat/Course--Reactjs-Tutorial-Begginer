@@ -12,6 +12,14 @@ export const ParentTwo = () => {
             <button onClick={() => setName('Codevolution')}>Change Name</button>
 
             <MemoizedChildTwo name={name} />
+            <ul>
+                <li>Parent 1</li>
+                <li>Parent zxcvasdf 2</li>
+                <li>Parent asdf dd 3</li>
+                <li>Parent  asdf d 4</li>
+                <li>Parent 5</li>
+                <li>Parent 6</li>
+            </ul>
         </div>
     )
 }

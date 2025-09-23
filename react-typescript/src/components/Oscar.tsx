@@ -3,5 +3,10 @@ type OscarProps = {
 }
 
 export const Oscar = (props: OscarProps) => {
-    return <div>{props.children}</div>
+    return <div style={{
+        border: "1px solid gray",
+        width: "50%",
+        padding: 30,
+        margin: "0 auto"
+    }}>{props.children}</div>
 }

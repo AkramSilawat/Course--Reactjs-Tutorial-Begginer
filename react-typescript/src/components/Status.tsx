@@ -3,12 +3,12 @@ type StateProps = {
 }
 
 export const Status = (props: StateProps) => {
-    let message 
-    if(props.status === 'loading') {
+    let message
+    if (props.status === 'loading') {
         message = 'Loading...'
-    }else if (props.status === 'success') {
+    } else if (props.status === 'success') {
         message = 'Data fetched successfully!'
-    }else if (props.status === 'error') {
+    } else if (props.status === 'error') {
         message = 'Error fetching data'
     }
     return (

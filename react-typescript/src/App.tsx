@@ -8,6 +8,7 @@ import { Box } from './components/context/Box';
 import { ThemeContextProviderProps } from './components/context/ThemeContext';
 import { User } from './components/context/User';
 import { UserContextProvider } from './components/context/UserContext';
+import { List } from './components/generics/List';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -21,47 +22,68 @@ function App() {
 
   // -------> Basic Props <------
 
-  // const personName = {
-  //   first: 'Bruce',
-  //   last: 'Wayne'
-  // }
+  const personName = {
+    first: 'Bruce',
+    last: 'Wayne'
+  }
 
-  // const nameList = [
-  //   {
-  //     first: 'Bruce',
-  //     last: 'Wayne',
-  //   },
-  //   {
-  //     first: 'Clark',
-  //     last: 'Kent',
-  //   },
-  //   {
-  //     first: 'Princess',
-  //     last: 'Diana',
-  //   }
-  // ]
+  const nameList = [
+    {
+      first: 'Bruce',
+      last: 'Wayne',
+    },
+    {
+      first: 'Clark',
+      last: 'Kent',
+    },
+    {
+      first: 'Princess',
+      last: 'Diana',
+    }
+  ]
 
   return (
     <div className="App">
 
       {/* -------> Basic Props <------ */}
 
-      {/* <Greet name='Akram' messageCount={20} isLoggedIn={false} />
+      {/* <Greet name='Akram' messageCount={20} isLoggedIn={true} />
       <Person name={personName} />
-      <PersonList name={nameList}/> */}
+      <PersonList names={nameList}/> */}
 
       {/* <Status status='loading'/>
       <Heading>Placeholder text</Heading>
       <Oscar>
         <Heading>Oscar goes Leonardo Dispario!</Heading>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis</p>
+        <br />
+        <button>submit</button>
       </Oscar>
-      <Greet name='Akram' isLoggedIn={false} /> */}
+      <Greet isLoggedIn={true} name='Akram' messageCount={20} /> */}
 
       {/* <Button handleClick={(event, id) => {
-        console.log('Button clicked', event, id)
-      }}
+          console.log('Button clicked', event, id)
+        }}
       /> */}
-      {/* <Input value='' handleChange={(event) => console.log(event)} /> */}
+
+
+      {/* <Input
+        value=''
+        placeholder="Enter the user name"
+        handleChange={(event) => console.log(event)}
+      />
+
+      <Input
+        value=''
+        placeholder="Enter Mobile"
+        handleChange={(event) => console.log(event.target)}
+      />
+
+      <Input
+        value=''
+        placeholder="Enter email"
+        handleChange={(event) => console.log(event.target.value)}
+      /> */}
 
       {/* <Container styles={{border: '1px solid black', padding: '1rem'}}/> */}
 
@@ -76,11 +98,15 @@ function App() {
 
       {/* <Counter message='The count value is' /> */}
 
-        <Private isLoggedIn={true} component={Profile} />
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
 
+ 
+      {/* <List
+        items={['Batman', 'Superman', 'Wonder Woman ']}
+        onClick={(item) => console.log(item)}
+      />
+       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
     </div>
-
-
   )
 }
 
