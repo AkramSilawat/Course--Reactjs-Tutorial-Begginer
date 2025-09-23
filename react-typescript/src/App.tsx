@@ -15,6 +15,7 @@ import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { RendomNumber } from './components/restriction/RandomNumber';
 // import { Counter } from './components/state/Counter';
 import { Status } from './components/Status';
 
@@ -106,7 +107,9 @@ function App() {
         onClick={(item) => console.log(item)}
       />
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
-      <List
+
+      {/* ----> 20. Generic Props <----- */}
+      {/* <List
         items={[
           {
             id: 1,
@@ -125,7 +128,11 @@ function App() {
           },
         ]}
         onClick={(item) => console.log(item)}
-      />
+      /> */}
+
+      <RendomNumber value={10} isPositive />
+
+
     </div>
   )
 }
