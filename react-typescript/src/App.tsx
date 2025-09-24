@@ -18,6 +18,7 @@ import { PersonList } from './components/PersonList';
 import { RendomNumber } from './components/restriction/RandomNumber';
 // import { Counter } from './components/state/Counter';
 import { Status } from './components/Status';
+import { Toast } from './components/templateliterals/Toast';
 
 function App() {
 
@@ -130,9 +131,10 @@ function App() {
         onClick={(item) => console.log(item)}
       /> */}
 
-      <RendomNumber value={10} isPositive />
+      {/* <RendomNumber value={10} isPositive /> */}
 
-
+{/* ----> 21 - Template Literals and Exclude */}
+        <Toast position='center' />
     </div>
   )
 }
