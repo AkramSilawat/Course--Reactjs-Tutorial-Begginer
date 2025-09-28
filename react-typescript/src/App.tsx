@@ -137,9 +137,9 @@ function App() {
 {/* ----> 21 - Template Literals and Exclude */}
         {/* <Toast position='center' /> */}
 
-        <CustomButton variant='primary' onClick={() => console.log('Clicked')}> 
+        {/* <CustomButton variant='primary' onClick={() => console.log('Clicked')}> 
           primary Button
-        </CustomButton>
+        </CustomButton> */}
     </div>
   )
 }
