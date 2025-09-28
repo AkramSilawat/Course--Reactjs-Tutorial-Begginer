@@ -16,6 +16,7 @@ import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { Text } from './components/polymorphic/Text';
 import { RendomNumber } from './components/restriction/RandomNumber';
 // import { Counter } from './components/state/Counter';
 import { Status } from './components/Status';
@@ -134,12 +135,22 @@ function App() {
 
       {/* <RendomNumber value={10} isPositive /> */}
 
-{/* ----> 21 - Template Literals and Exclude */}
-        {/* <Toast position='center' /> */}
+      {/* ----> 21 - Template Literals and Exclude */}
+      {/* <Toast position='center' /> */}
 
-        {/* <CustomButton variant='primary' onClick={() => console.log('Clicked')}> 
+      {/* <CustomButton variant='primary' onClick={() => console.log('Clicked')}> 
           primary Button
         </CustomButton> */}
+
+      <Text as='h1' size='lg'>
+        Heading
+      </Text>
+      <Text as='p' size='md'>
+        Paragraph
+      </Text>
+      <Text as='label' htmlFor='someId' size='sm' color='secondary'>
+        Label
+      </Text>
     </div>
   )
 }
