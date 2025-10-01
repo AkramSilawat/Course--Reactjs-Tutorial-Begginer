@@ -1,3 +1,5 @@
+// ->  24 - Polymorphic Components
+
 import React from "react";
 
 type TextOwnProps<E extends React.ElementType> = {

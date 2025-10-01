@@ -142,6 +142,10 @@ function App() {
           primary Button
         </CustomButton> */}
 
+
+
+{/* // ->  24 - Polymorphic Components */}
+
       <Text as='h1' size='lg'>
         Heading
       </Text>
